@@ -1,0 +1,1 @@
+script: g++ eqSolution.cpp -o eqSol && ./eqSol
