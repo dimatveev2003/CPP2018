@@ -1,1 +1,1 @@
-script: g++ eqSolution.cpp -o eqSol && ./eqSol
+script: g++ main.cpp car.cpp && ./a.out

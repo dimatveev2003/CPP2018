@@ -1,0 +1,22 @@
+В файле .git/config (CPP2018)
+[remote "origin2"]
+        url = https://github.com/imitrichev/CPP2018.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+Сохранить
+
+git checkout -b doxy
+git pull origin2 master
+sudo apt install diffuse
+git mergetool --tool=diffuse
+
+Windows: 
+скачать p4merge
+https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
+git config --global mergetool.p4merge.path 'C:\Program Files\Perforce\p4merge.exe'
+git config --global merge.tool p4merge
+git mergetool
+
+разрешить конфликт, выбрав все из B (REMOTE)
+Сохранить, сделать коммит, пуш.
+
+
