@@ -1,15 +1,22 @@
 #include <iostream>
+
+template<typename T> T MyPow(T Base, T PowerBase){
+    T Result = 1;
+    for (int j = 1; j <= PowerBase; j++){
+        Result *= Base;
+    }
+    return Result;
+}
+void Test(){
+    for (int i = 0; i < 11; i++){
+        std::cout << MyPow(2, i) << std::endl;
+    }
+}
+
 int main()
 {
-int b=2;
-for(int i=0;i<10;++i)
-{
-int p;
-p=1;
-for(int t=1;t<=i;++t)
-p=p*b;
-std::cout<<p<<" ";
+    Test();
+    return 0;
 }
-std::cout<<std::endl;
-return 0;
-}
+
+
