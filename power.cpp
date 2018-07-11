@@ -8,7 +8,7 @@ template<typename T> T MyPow(T Base, T PowerBase){
     }
     return Result;
 }
-//! this function test
+//! this test function 
 void Test(){
     for (int i = 0; i < 11; i++){
         std::cout << MyPow(2, i) << std::endl;
